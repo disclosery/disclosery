@@ -9,6 +9,16 @@
 
 **[Explore the website](https://disclosery.com/) · [API and MCP setup](https://disclosery.com/docs) · [API contract](https://disclosery.com/llms-api.txt) · [Data coverage](https://disclosery.com/data)**
 
+## Use Disclosery from your terminal
+
+Install **[Disclosery CLI 0.1.0](https://github.com/disclosery/disclosery-cli/releases/tag/v0.1.0)** from the [installation guide](https://disclosery.com/docs#cli). Versioned Linux, macOS and Windows archives include SHA-256 checksums, MIT licensing and dependency notices. Linux x64 is validated; the other builds are experimental, with unsigned macOS and Windows binaries.
+
+```sh
+disclosery --accept-terms --json fund filings 1350694
+```
+
+JSON research queries and a cursor-based filing watch use the production API. CSV/CUSIP export uses the existing server authorization and requires a paid API key.
+
 ## Build with Disclosery
 
 Start with **[disclosery-examples](https://github.com/disclosery/disclosery-examples)** for runnable API recipes and assistant connection instructions:
